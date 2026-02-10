@@ -42,6 +42,7 @@ class EmployeeCreate(BaseModel):
             raise ValueError("Department is required")
         return v.strip()
 
+# Employee response schema
 
 class EmployeeResponse(BaseModel):
     id: int
