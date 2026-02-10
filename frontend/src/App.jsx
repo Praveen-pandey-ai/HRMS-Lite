@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
+import MobileNav from './components/MobileNav';
 import Dashboard from './pages/Dashboard';
 import Employees from './pages/Employees';
 import AddEmployee from './pages/AddEmployee';
@@ -12,6 +13,7 @@ function App() {
     <Router>
       <div className="app-layout">
         <Sidebar />
+        <MobileNav />
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Dashboard />} />
